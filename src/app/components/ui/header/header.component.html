@@ -57,7 +57,7 @@
            <div class="row align-items-center">
               <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
                  <div class="header_logo_box">
-                    <a  class="logo navbar-brand">
+                    <a (click)="global.setRoute('home')"  class="logo navbar-brand">
                        <img src="assets/legales/images/logo-default.png" alt="Creote Elementor" class="logo_default">
                        <img src="assets/legales/images/logo-default.png" alt="Creote Elementor" class="logo__sticky">
                     </a>
@@ -74,8 +74,8 @@
                        <div class="navigation_menu">
                           <ul id="myNavbar" class="navbar_nav">
                              <li
-                                class="menu-item  menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
-                                <a href="index.html" class="dropdown-toggle nav-link">
+                                class="menu-item  position-static nav-item">
+                                <a (click)="global.setRoute('home')"  class="dropdown-toggle nav-link">
                                    <span>Inicio</span>
                                 </a>
                                 
@@ -92,46 +92,25 @@
                                    </li>
                                    
                                   <li class="menu-item  nav-item">
-                                     <a  class="dropdown-item nav-link">
+                                     <a (click)="global.setRoute('faq')" class="dropdown-item nav-link">
                                         <span>Faq</span>
                                      </a>
                                   </li>
                                    <li class="menu-item menu-item-has-children dropdown nav-item">
                                       <a 
-                                         class="dropdown-item nav-link"><span>Servicios</span></a>
-                                      <ul class="dropdown-menu">
-                                         <li class="menu-item  nav-item">
-                                            <a  class="dropdown-item nav-link">
-                                               <span> Derecho Penal</span>
-                                            </a>
-                                         </li>
-                                         <li class="menu-item  nav-item">
-                                            <a  class="dropdown-item nav-link">
-                                               <span>Derecho Civil</span>
-                                            </a>
-                                         </li>
-                                         <li class="menu-item nav-item">
-                                            <a  class="dropdown-item nav-link">
-                                               <span>Derecho inmobiliario y urbanístico</span>
-                                            </a>
-                                         </li>
-                                         <li class="menu-item nav-item">
-                                             <a  class="dropdown-item nav-link">
-                                                <span>Derecho de los Negocios y de la Empresa</span>
-                                             </a>
-                                          </li>
-                                      </ul>
+                                         class="dropdown-item nav-link"><span>Aplicación Garente</span></a>
+                                      
                                    </li>
                                    
                                 </ul>
                              </li>
                              <li class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
-                               <a href="#" class="dropdown-toggle nav-link"><span>Especialidades</span></a>
+                               <a (click)="global.setRoute('service')" class="dropdown-toggle nav-link"><span>Especialidades</span></a>
                                <ul class="dropdown-menu width_60_percentage">
                                    <li>
                                        <div class="row">
                                            <div class="col-lg-3 m_column">
-                                               <h5>Derecho penal</h5>
+                                               <a (click)="global.setRoute('serv-penal')"><h5>Derecho penal</h5></a>
                                                <div class="list_item_box style_one">
                                                    <ul>
                                                        <!-- <li><a href="elements/testimonial.html">Testimonial</a></li>
@@ -145,7 +124,7 @@
                                                </div>
                                            </div>
                                            <div class="col-lg-3 m_column">
-                                               <h5>Derecho civil</h5>
+                                              <a (click)="global.setRoute('serv-civil')"><h5>Derecho civil</h5></a>
                                                <div class="list_item_box style_one">
                                                    <ul>
                                                        <!-- <li><a href="elements/process.html">Process</a></li>
@@ -160,7 +139,7 @@
                                                </div>
                                            </div>
                                            <div class="col-lg-3 m_column">
-                                               <h5>Derecho inmobiliario y urbanístico</h5>
+                                              <a (click)="global.setRoute('serv-inmo')"><h5>Derecho inmobiliario y urbanístico</h5></a>
                                                <div class="list_item_box style_one">
                                                    <ul>
                                                        <!-- <li><a href="elements/button.html">Button</a></li>
@@ -173,7 +152,7 @@
                                                </div>
                                            </div>
                                            <div class="col-lg-3 m_column">
-                                               <h5>Derecho de los Negocios y de la Empresa</h5>
+                                              <a (click)="global.setRoute('serv-emp')"> <h5>Derecho de los Negocios y de la Empresa</h5></a>
                                                <div class="list_item_box style_one">
                                                    <ul>
                                                        <li>Derecho societario y manejo corporativo</li>
@@ -184,7 +163,7 @@
                                                </div>
                                            </div>
                                            <div class="col-lg-3 m_column">
-                                               <h5>Propiedad Intelectual</h5>
+                                              <a (click)="global.setRoute('serv-pro-int')"><h5>Propiedad Intelectual</h5></a>
                                                <div class="list_item_box style_one">
                                                    <ul>
                                                        <li>Registro de Patentes</li>
@@ -193,7 +172,7 @@
                                                </div>
                                            </div>
                                            <div class="col-lg-3 m_column">
-                                               <h5>Derecho Aduanero, Cambiario y Comercio Exterior</h5>
+                                              <a (click)="global.setRoute('serv-adu-ext')"> <h5>Derecho Aduanero, Cambiario y Comercio Exterior</h5></a>
                                                <div class="list_item_box style_one">
                                                    <ul>
                                                        <!-- <li><a href="elements/call-to-action.html">Call to Action</a>
@@ -212,8 +191,8 @@
                                </ul>
                            </li>
                            
-                             <li class="menu-item menu-item-has-children dropdown nav-item">
-                                <a  class=" nav-link">
+                             <li class="menu-item nav-item">
+                                <a (click)="global.setRoute('blog')" class=" nav-link">
                                    <span>Blog</span>
                                 </a>
                                
@@ -224,7 +203,7 @@
                     <div class="header_right_content">
                        <ul>
                          <li class="header-button">
-                             <a href="#" target="_blank" rel="" class="theme-btn one"> Aplicación servicio de garente </a>
+                             <a  target="_blank" rel="" class="theme-btn one"> Aplicación servicio de garente </a>
                           </li>
                           <li>
                              <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>

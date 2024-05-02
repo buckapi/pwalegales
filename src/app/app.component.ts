@@ -12,6 +12,17 @@ import { virtualRouter } from './services/virtualRouter.service';
 import { TestComponent } from './components/test/test.component';
 import { HeaderDashboardComponent } from './components/ui/header-dashboard/header-dashboard.component';
 import { AboutComponent } from './components/about/about.component';
+import { ServDetailComponent } from './components/serv-detail/serv-detail.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ServPenalComponent } from './components/serv-penal/serv-penal.component';
+import { ServCivilComponent } from './components/serv-civil/serv-civil.component';
+import { ServInmoComponent } from './components/serv-inmo/serv-inmo.component';
+import { ServEmpComponent } from './components/serv-emp/serv-emp.component';
+import { ServProIntComponent } from './components/serv-pro-int/serv-pro-int.component';
+import { ServAduExtComponent } from './components/serv-adu-ext/serv-adu-ext.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -25,7 +36,18 @@ import { AboutComponent } from './components/about/about.component';
     HeaderHomeComponent,
     TestComponent,
     HeaderDashboardComponent,
-    AboutComponent    
+    AboutComponent,
+    ServDetailComponent,
+    BlogComponent,
+    FaqComponent,
+    ContactComponent,
+    ServiceComponent,
+    ServPenalComponent,
+    ServCivilComponent,
+    ServInmoComponent,
+    ServEmpComponent,
+    ServProIntComponent,
+    ServAduExtComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
