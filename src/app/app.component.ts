@@ -23,6 +23,8 @@ import { ServInmoComponent } from './components/serv-inmo/serv-inmo.component';
 import { ServEmpComponent } from './components/serv-emp/serv-emp.component';
 import { ServProIntComponent } from './components/serv-pro-int/serv-pro-int.component';
 import { ServAduExtComponent } from './components/serv-adu-ext/serv-adu-ext.component';
+import { PostComponent } from './components/post/post.component';
+import { Post1Component } from './components/post1/post1.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -47,7 +49,9 @@ import { ServAduExtComponent } from './components/serv-adu-ext/serv-adu-ext.comp
     ServInmoComponent,
     ServEmpComponent,
     ServProIntComponent,
-    ServAduExtComponent
+    ServAduExtComponent,
+    PostComponent,
+    Post1Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
