@@ -16,30 +16,6 @@ export class BlogComponent {
     public script: ScriptService,
     public virtualRouter: virtualRouter ,
  ) {
-  this.script.load(
-    'gmaps',
-    'map-helper',
-    'creote-extension',
-    'jquery-3.6.0',
-    'bootstrap',
-    'jquery-fancybox',
-    'jQuery-style-switcher',
-    'jquery-flexslider',
-    'color-scheme',
-    'owl',
-    'swiper',
-    'isotope',
-    'countdown',
-    'simpleParallax',
-    'appear',
-    'jquery-countTo',
-    'sharer',
-    'validation'
-  )
-    .then(() => {
-      console.log('Todos los scripts se cargaron correctamente');
-    })
-    .catch(error => console.log(error));
-    // this.epicFunction();
+  
   }
 }

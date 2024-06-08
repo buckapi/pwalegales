@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-serv-emp',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './serv-emp.component.css'
 })
 export class ServEmpComponent {
-
+  constructor (
+    public global: GlobalService
+  ){}
 }

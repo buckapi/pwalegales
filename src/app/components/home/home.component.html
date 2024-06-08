@@ -39,7 +39,7 @@
                                 <h1 class="animate_left">Representamos la Seriedad</h1>
                                 <p class="description animate_right">Legales es una firma de abogados ubicada en Medellín. Nos especializamos en brindar representación legal sólida y confiable en una variedad de casos legales. Nuestra prioridad es defender sus derechos y luchar por sus intereses con profesionalismo y dedicación.</p>
                                 <div class="button_all animate_down">
-                                   <a (click)="global.setRoute('about')" target="_blank" rel="nofollow" class="theme-btn one animated">Leer Más</a>
+                                   <a (click)="global.setRoute('about')"  rel="nofollow" class="theme-btn one animated">Leer Más</a>
                                 </div>
                              </div>
                           </div>
@@ -201,19 +201,19 @@
                                              alt="Service Image" />
                                      </div>
                                      <h2>
-                                         <a href="#">Derecho de los Negocios y de la Empresa</a>
+                                         <a (click)="global.setRoute('serv-emp')">Derecho de los Negocios y de la Empresa</a>
                                      </h2>
                                      <p>Ofrecemos asesoría legal que van desde la constitución de entidades o empresas hasta el cierre de sus operaciones. </p>
                                  </div>
                              </div>
                              <div class="ovarlay_link">
-                                 <a href="#">
+                                 <a (click)="global.setRoute('serv-emp')">
                                      <i class="icon-right-arrow"></i>
                                  </a>
                              </div>
                              <div class="overlay_content">
                                  <h2>
-                                     <a href="#">Derecho de los negocios y de la empresa</a>
+                                     <a (click)="global.setRoute('serv-emp')">Derecho de los negocios y de la empresa</a>
                                  </h2>
                                  <p>Propiedad intelectual <br> Registro de marca <br> Registro de patentes</p>
                              </div>
@@ -234,20 +234,20 @@
                                              alt="Service Image" />
                                      </div>
                                      <h2>
-                                         <a href="#">Derecho Civil e Inmobiliario</a>
+                                         <a (click)="global.setRoute('serv-inmo')">Derecho Civil e Inmobiliario</a>
                                      </h2>
                                      <p>Brindamos asesoría integral en derecho civil e inmobiliario, tanto judicial como
                                          extrajudicialmente.</p>
                                  </div>
                              </div>
                              <div class="ovarlay_link">
-                                 <a href="#">
+                                 <a (click)="global.setRoute('serv-inmo')">
                                      <i class="icon-right-arrow"></i>
                                  </a>
                              </div>
                              <div class="overlay_content">
                                  <h2>
-                                     <a href="#">Derecho Civil e Inmobiliario</a>
+                                     <a (click)="global.setRoute('serv-inmo')">Derecho Civil e Inmobiliario</a>
                                  </h2>
                                  <p>Brindamos asesoría integral en derecho civil e inmobiliario, tanto judicial como
                                      extrajudicialmente.</p>
@@ -269,20 +269,20 @@
                                              alt="Service Image" />
                                      </div>
                                      <h2>
-                                         <a href="#">Derecho Penal - Corporativo</a>
+                                         <a (click)="global.setRoute('serv-penal')">Derecho Penal - Corporativo</a>
                                      </h2>
                                      <p>Ofrecemos defensas y asesorías penales complejas a nivel nacional, reconocidas por
                                        nuestro compromiso y formación académica.</p>
                                     </div>
                              </div>
                              <div class="ovarlay_link">
-                                 <a href="#">
+                                 <a (click)="global.setRoute('serv-penal')">
                                      <i class="icon-right-arrow"></i>
                                  </a>
                              </div>
                              <div class="overlay_content">
                                  <h2>
-                                     <a href="#">Derecho Penal - Corporativo</a>
+                                     <a (click)="global.setRoute('serv-penal')">Derecho Penal - Corporativo</a>
                                  </h2>
                                  <p>Aplica para casos como los siguientes: 
                                     <li>Fraude corporativo</li>
@@ -315,8 +315,7 @@
                      <div class="row">
                          <div class="col-lg-4">
                              <div class="video_box text-center">
-                                 <a href="https://www.youtube.com/embed/-VK0axfge4A" class="lightbox-image"><i
-                                         class="icon-play"></i></a>
+                                 <a class="lightbox-image"></a>
                              </div>
                          </div>
                          <div class="col-lg-2"></div>
@@ -327,7 +326,7 @@
                                      <p>Somos Legales, una firma de abogados comprometida con brindar defensas sólidas y asesoramiento legal experto. Nuestra experiencia en casos de empresariales, aduanero y comercio exterior nos permite ofrecer asesoramiento y defensa integral a nuestros clientes.</p>
                                  </div>
                                  <div class="theme_btn">
-                                     <a  class="theme-btn one">Conozca más</a>
+                                     <a (click)="global.setRoute('blog')" class="theme-btn one">Conozca más</a>
                                  </div>
                              </div>
                          </div>
@@ -756,6 +755,8 @@
          <div class="pd_bottom_60"></div>
          <!--===============spacing==============-->
      </section>
+     <div class="pd_top_80"></div>
+     <div class="pd_top_80"></div>
        <!---blog-end--->
        <!---newsteller--->
        <section class="newsteller style_one bg_dark_1">

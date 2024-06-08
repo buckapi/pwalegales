@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-serv-adu-ext',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './serv-adu-ext.component.css'
 })
 export class ServAduExtComponent {
-
+  constructor (
+    public global: GlobalService
+  ){}
 }
