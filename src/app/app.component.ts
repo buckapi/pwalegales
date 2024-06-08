@@ -64,10 +64,10 @@ export class AppComponent {
     public virtualRouter: virtualRouter ,
  ) {
   this.script.load(
-   /*  'gmaps', */
-    'map-helper',
-/*     'creote-extension',
- */    'jquery-3.6.0',
+   /*  'gmaps', 
+    'map-helper',*/
+   'creote-extension',
+     'jquery-3.6.0',
     'bootstrap',
     'jquery-fancybox',
     'jQuery-style-switcher',
