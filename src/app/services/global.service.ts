@@ -133,19 +133,19 @@ view:any=true;
 //     }
 // );
     
-this.getDoctors().subscribe(
+/* this.getDoctors().subscribe(
   response=>{
     this.doctors=response;
   }
-);
-this.getSpecialties().subscribe(
+); */
+/* this.getSpecialties().subscribe(
   response => {
     this.specialties = response;
   }
-);
+); */
    }
  
-   getDoctors(): Observable<any[]> {
+ /*   getDoctors(): Observable<any[]> {
     this.urlPrev = this.doctorsUrl;
     return this.getAllPages(this.urlPrev).pipe(
       tap(doctors => {
@@ -158,7 +158,7 @@ this.getSpecialties().subscribe(
         this.categories = Array.from(categories).sort((a, b) => a.localeCompare(b));
       })
     );
-  }
+  } */
 
 
  
