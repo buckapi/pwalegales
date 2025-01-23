@@ -25,6 +25,7 @@ import { ServProIntComponent } from './components/serv-pro-int/serv-pro-int.comp
 import { ServAduExtComponent } from './components/serv-adu-ext/serv-adu-ext.component';
 import { PostComponent } from './components/post/post.component';
 import { Post1Component } from './components/post1/post1.component';
+import { ServCasaCobranzaComponent } from './components/serv-casa-cobranza/serv-casa-cobranza.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -51,7 +52,8 @@ import { Post1Component } from './components/post1/post1.component';
     ServProIntComponent,
     ServAduExtComponent,
     PostComponent,
-    Post1Component
+    Post1Component,
+    ServCasaCobranzaComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

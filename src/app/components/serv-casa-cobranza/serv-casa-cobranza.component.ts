@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-serv-casa-cobranza',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './serv-casa-cobranza.component.css'
 })
 export class ServCasaCobranzaComponent {
-
+constructor(
+ public global: GlobalService,
+) { }
 }
